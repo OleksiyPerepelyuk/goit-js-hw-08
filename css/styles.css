@@ -31,5 +31,6 @@ ol {
 }
 
 .gallery-image:hover {
-  transform: translateY(-5%);
+  transform: translateY(-3%);
+  transition: 500ms;
 }
