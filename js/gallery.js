@@ -88,11 +88,14 @@ gallery.innerHTML = imagesTemplate(images);
 gallery.addEventListener('click', openModal);
 
 const modal = basicLightbox.create(`
-    <img src="#" alt = "#" width="800" height="600">
+    <img src="#" alt = "#" width="1112" height="640">
 `);
 
 function openModal(event) {
-    event.preventDefault()
-    if (event.target.nodeName !== "IMG") return;
-    const image = 
+  event.preventDefault();
+  if (event.target.nodeName !== 'IMG') return;
+  const img = modal.element().querySelector('img');
+  img.src = event.target.dataset.source;
+  img.alt = event.target.alt;
+  modal.show();
 }
