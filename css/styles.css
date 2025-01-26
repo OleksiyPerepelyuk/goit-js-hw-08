@@ -29,3 +29,7 @@ ol {
   width: 360px;
   height: 200px;
 }
+
+.gallery-image:hover {
+  transform: translateY(-5%);
+}
